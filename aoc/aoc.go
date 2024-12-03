@@ -66,6 +66,7 @@ func NewCalendar(inputs fs.FS) (*Calendar, error) {
 
 	c.days[0].Solution = calendar.NewDay01()
 	c.days[1].Solution = calendar.NewDay02()
+	c.days[2].Solution = calendar.NewDay03()
 	return &c, nil
 }
 
