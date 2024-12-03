@@ -7,7 +7,7 @@ import (
 	"github.com/transmitt0r/aoc2024/calendar"
 )
 
-var testInput = []byte(`3   4
+var testInputDay01 = []byte(`3   4
 4   3
 2   5
 1   3
@@ -16,7 +16,7 @@ var testInput = []byte(`3   4
 
 func TestDay01(t *testing.T) {
 	sol := calendar.NewDay01()
-	err := sol.Load(bytes.NewBuffer(testInput))
+	err := sol.Load(bytes.NewBuffer(testInputDay01))
 	if err != nil {
 		t.Fatal("error while loading input", err)
 	}
